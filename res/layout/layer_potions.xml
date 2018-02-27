@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/digits_color"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/_step_text_view_third_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Шаг 3. Зелья"
+                android:textColor="@color/impact_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Здесь укажите ходы в которые бот должен будет пить зелья из различных слотов, следуя легенде ниже:\n\n0 - Ничего не пить\n1 - Выпить из первого слота\n2 - Выпить из второго слота\n3 - Выпить из третьего слота\n4 - Выпить из четвертого слота\n5 - Выпить из пятого слота\n6 - Выпить из шестого слота\n7 - Выпить из седьмого слота\n\nНапример: 02002005200052.\nСогласно конфигурации в примере, на втором ходу бот выпьет зелье из второго слота (слева), допустим это салат, это же он выпьет на 5, 9 и 14 ходах. На 8 и 13 ходу он выпьет зелье из 5 слота (Пусть это будет жидкий доктор).\n\nЕсли Вы пропустите этот шаг, оставив поле пустым, бот ничего не будет пить."
+                android:textColor="@color/digits_color" />
+
+            <TextView
+                android:id="@+id/slide_3_hmany_turns_configured_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/impact_color" />
+
+            <EditText
+                android:id="@+id/slide_3_ed_potion_turns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:digits="01234567"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Никаких банок"
+                android:inputType="number"
+                android:maxLength="100" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editText1"
+                android:gravity="center_horizontal"
+                android:text="Опять же для конфигурации доступно 100 ходов."
+                android:textColor="@color/digits_color" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

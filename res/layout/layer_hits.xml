@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/digits_color"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/_step_text_view_first_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Шаг 1. Супер-удары"
+                android:textColor="@color/impact_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Введите Ваши комбинации ударов заменяя их цифрами в соответствии с легендой ниже:\n\n0 - Произвольный выбор\n1 - Удар сверху\n2 - Удар прямо\n3 - Удар снизу\n\nНапример: 1212223121223.\n\nЕсли Вы пропустите этот шаг ничего не введя в поле то удары будут производится в произвольном порядке."
+                android:textColor="@color/digits_color" />
+
+            <TextView
+                android:id="@+id/slide_1_hmany_turns_configured_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/impact_color" />
+
+            <EditText
+                android:id="@+id/slide_1_ed_superhits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:digits="0123"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Произвольные ходы"
+                android:inputType="number"
+                android:maxLength="100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editText1"
+                android:gravity="center_horizontal"
+                android:text="Для конфигурации доступно 100 ходов. Вводимые Вами комбинации ударов для бота не имеют никакого смысла.  Для него это простой набор цифр - последовательность наносимых ударов - сверху, прямо или снизу. Вы решаете на каком ходу кидать СУ."
+                android:textColor="@color/digits_color" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

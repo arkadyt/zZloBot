@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/digits_color"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/_step_text_view_fifth_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Шаг 5. Окончание Боя"
+                android:textColor="@color/impact_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="432dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Когда бой заканчивается, перед тем как идти в следующий бой, бот может:\n\n1. Bыждать пока жизнь восстановится\n2. Либо может просто выждать определенный промежуток времени перед очередной битвой.\n\nТак что выбирайте, но только что-нибудь одно из двух."
+                android:textColor="@color/digits_color" />
+
+            <RadioGroup
+                android:id="@+id/slide_5_rg_on_battle_finished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/slide_5_rb_wait_for_full_hp" >
+
+                <RadioButton
+                    android:id="@+id/slide_5_rb_wait_for_full_hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ждать полного восстановления ХП" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#5ABEBEBE"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/slide_5_rb_wait_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Просто промежуток времени:" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/slide_5_txt_above_ed_delay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Промежуток задается в миллисекундах.\n\n 1 секунда = 1000 миллисекунд\n5 секунд = 5000 миллисекунд\n1 минута = 60 000 миллисекунд"
+                android:textColor="@color/digits_color" />
+
+            <EditText
+                android:id="@+id/slide_5_ed_wait_delay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/life_regen_wait_default"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="6" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

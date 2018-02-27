@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_button_left"
+        android:showAsAction="always"
+        android:title="НАЗАД">
+    </item>
+    <item
+        android:id="@+id/menu_button_right"
+        android:showAsAction="always"
+        android:title="ДАЛЕЕ">
+    </item>
+
+</menu>

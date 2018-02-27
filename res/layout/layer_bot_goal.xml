@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/digits_color"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/_step_text_view_sixth_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Шаг 6. Цель бота"
+                android:textColor="@color/impact_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="432dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Ну и теперь самое главное - цель бота. Бот может: \n\nБить мобов в охоте\nНабивать дуэли\nХодить на ВЖВ\nБегать на стенку\n"
+                android:textColor="@color/digits_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_horizontal"
+                android:text="Выбирайте:"
+                android:textColor="@color/digits_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <RadioGroup
+                android:id="@+id/slide_6_rgroup_bot_purpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/slide_6_rb_purpose_haunt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Бить мобов в охоте" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Какого Моба? Введите число от 1 до 6."
+                    android:textColor="@color/digits_color" />
+
+                <EditText
+                    android:id="@+id/slide_6_ed_purpose_haunt_mob_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="123456"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:text="@string/monster_position_in_menu_default" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/slide_6_btn_bots_numbering"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_adj_clr_solid_bg"
+                    android:text="Нумерация мобов"
+                    android:textColor="@color/digits_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Сколько раз бить выбранного моба?"
+                    android:textColor="@color/digits_color" />
+
+                <EditText
+                    android:id="@+id/slide_6_ed_purpose_haunt_how_many_times"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:text="@string/runs_amount_default" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#5ABEBEBE"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/slide_6_rb_purpose_duels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Набивать дуэли" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Сколько дуэлей?"
+                    android:textColor="@color/digits_color" />
+
+                <EditText
+                    android:id="@+id/slide_6_ed_purpose_duels_how_many"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:text="@string/runs_amount_default" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#5ABEBEBE"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/slide_6_rb_purpose_survival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ходить на ВЖВ" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Сколько раз?"
+                    android:textColor="@color/digits_color" />
+
+                <EditText
+                    android:id="@+id/slide_6_ed_purpose_survival_how_many"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:text="@string/runs_amount_default" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#5ABEBEBE"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/slide_6_rb_purpose_a_wall_against_the_wall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Бегать на стенку" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Сколько раз?"
+                    android:textColor="@color/digits_color" />
+
+                <EditText
+                    android:id="@+id/slide_6_ed_purpose_a_wall_against_the_wall_how_many"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:text="@string/runs_amount_default" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#5ABEBEBE"
+                    android:visibility="visible" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/slide_6_cbox_must_win_only"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Условие обязательной победы" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Это значит, что если бот проиграет бой то счетчик битв не увеличится. Относится только к охоте и к дуэлям, но не к ВЖВ и стенке."
+                android:textColor="@color/digits_color" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/digits_color"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/_step_text_view_fourth_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Шаг 4. Диалоги"
+                android:textColor="@color/impact_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Какое действие следует выполнить боту, если ему вдруг встретится подобный диалог?"
+                android:textColor="@color/digits_color" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ed_galochka" />
+
+            <RadioGroup
+                android:id="@+id/slide_4_radiogroup_edgalochka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/slide_4_rg_edgalochka_rb_stop" >
+
+                <RadioButton
+                    android:id="@+id/slide_4_rg_edgalochka_rb_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Приостановиться" />
+
+                <RadioButton
+                    android:id="@+id/slide_4_rg_edgalochka_rb_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Подтвердить, и идти дальше" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Какое действие следует выполнить боту, если ему вдруг встретится подобный диалог?"
+                android:textColor="@color/digits_color" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ok_dialog" />
+
+            <RadioGroup
+                android:id="@+id/slide_4_radiogroup_okdialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/slide_4_rg_okdialog_rb_stop" >
+
+                <RadioButton
+                    android:id="@+id/slide_4_rg_okdialog_rb_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Приостановиться" />
+
+                <RadioButton
+                    android:id="@+id/slide_4_rg_okdialog_rb_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Подтвердить, и идти дальше" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

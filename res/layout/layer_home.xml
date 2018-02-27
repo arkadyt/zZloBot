@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/_kkkow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/digits_color"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/black_color"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/_step_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Главное Меню"
+                    android:textColor="@color/impact_color"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.surveyo.zzlobot.views.LHFButton
+            android:id="@+id/btn_single_lhf"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_adj_clr_solid_bg"
+            android:text="Новый бот" />
+
+        <com.surveyo.zzlobot.views.LHFButton
+            android:id="@+id/btn_remote_lhf"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_single_lhf"
+            android:background="@drawable/btn_adj_light"
+            android:text="Открыть бота" />
+    </LinearLayout>
+
+</RelativeLayout>

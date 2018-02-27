@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="life_regen_wait_default">12000</string>
+    <string name="life_regen_wait_minimum">500</string>
+    <string name="runs_amount_default">5</string>
+    <string name="runs_amount_minimum">1</string>
+    <string name="monster_position_in_menu_default">1</string>
+    <string name="sleep_time_normal_default">1000</string>
+    <string name="sleep_time_normal_minimum">100</string>
+    <string name="sleep_time_tournament_default">5000</string>
+    <string name="sleep_time_tournament_minimum">500</string>
+
+</resources>

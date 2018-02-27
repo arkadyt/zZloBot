@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loader_wrapping_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@layout/dim_shape" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+
+        <WebView
+            android:id="@+id/marquee_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ViewAnimator
+            android:id="@+id/lhf_anim_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ViewStub
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_home" />
+
+            <ViewStub
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_botname" />
+
+            <ViewStub
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_hits" />
+
+            <ViewStub
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_shield" />
+
+            <ViewStub
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_potions" />
+
+            <ViewStub
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_skip_dialogs" />
+
+            <ViewStub
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_life_regen_options" />
+
+            <ViewStub
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_bot_goal" />
+
+            <ViewStub
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_sleep_times" />
+
+            <ViewStub
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_bot_files_list" />
+
+            <ViewStub
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_modify" />
+
+            <ViewStub
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/layer_reference" />
+        </ViewAnimator>
+    </LinearLayout>
+
+</FrameLayout>

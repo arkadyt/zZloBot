@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spit_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:minHeight="64dip"
+            android:orientation="horizontal"
+            app:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dip"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/alert_title"
+                style="@android:style/TextAppearance.Holo.DialogWindowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Диалоги"
+                android:textColor="@color/digits_color" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/titleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/digits_color"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Большой диалог:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/digits_color"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:id="@+id/clip_dialogs_rg_big_diag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="0.19" >
+
+        <RadioButton
+            android:id="@+id/clip_dialogs_rg_big_diag_rb_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Остановиться" />
+
+        <RadioButton
+            android:id="@+id/clip_dialogs_rg_big_diag_rb_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Подтверждать" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#5ABEBEBE"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Маленький диалог:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/digits_color"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:id="@+id/clip_dialogs_rg_small_diag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="0.19" >
+
+        <RadioButton
+            android:id="@+id/clip_dialogs_rg_small_diag_rb_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Остановиться" />
+
+        <RadioButton
+            android:id="@+id/clip_dialogs_rg_small_diag_rb_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Подтверждать" />
+    </RadioGroup>
+
+</LinearLayout>

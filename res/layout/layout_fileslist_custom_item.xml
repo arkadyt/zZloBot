@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/m_listitem_edit"
+        style="@style/button_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/m_listitem_delete"
+        android:src="@drawable/ic_edit_smth" />
+
+    <ImageButton
+        android:id="@+id/m_listitem_delete"
+        style="@style/button_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_delete_smth" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/m_listitem_edit" >
+
+        <TextView
+            android:id="@+id/m_listitem_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="false"
+            android:text="123456789012345678901234567890.hmd"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/digits_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/m_listitem_dateandtime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/m_listitem_tv_name"
+            android:layout_toLeftOf="@+id/m_listitem_filesize_tv"
+            android:text="28.11.2014 23:03"
+            android:textColor="@color/digits_color"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/m_listitem_filesize_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="163,2KB"
+            android:textColor="@color/digits_color"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

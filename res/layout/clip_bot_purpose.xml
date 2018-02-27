@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spit_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:minHeight="64dip"
+            android:orientation="horizontal"
+            app:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dip"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/alert_title"
+                style="@android:style/TextAppearance.Holo.DialogWindowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Цель бота"
+                android:textColor="@color/digits_color" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/titleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/digits_color"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/clip_bot_purpose_rg_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/clip_bot_purpose__rb_purpose_haunt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Бить мобов в охоте" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Какого Моба:"
+                android:textColor="@color/digits_color" />
+
+            <EditText
+                android:id="@+id/clip_bot_purpose_ed_purpose_haunt_mob_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:digits="123456"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <Button
+                android:id="@+id/clip_bot_purpose_btn_bots_numbering"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_adj_clr_solid_bg"
+                android:text="Нумерация мобов"
+                android:textColor="@color/digits_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Сколько раз:"
+                android:textColor="@color/digits_color" />
+
+            <EditText
+                android:id="@+id/clip_bot_purpose_ed_purpose_haunt_how_many_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/clip_bot_purpose_rb_purpose_duels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Набивать дуэли" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Сколько дуэлей:"
+                android:textColor="@color/digits_color" />
+
+            <EditText
+                android:id="@+id/clip_bot_purpose_ed_purpose_duels_how_many"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/clip_bot_purpose_rb_purpose_survival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ходить на ВЖВ" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Сколько раз:"
+                android:textColor="@color/digits_color" />
+
+            <EditText
+                android:id="@+id/clip_bot_purpose_ed_purpose_survival_how_many"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/clip_bot_purpose_rb_purpose_a_wall_against_the_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Бегать на стенку" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Сколько раз:"
+                android:textColor="@color/digits_color" />
+
+            <EditText
+                android:id="@+id/clip_bot_purpose_ed_purpose_a_wall_against_the_wall_how_many"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5" />
+        </RadioGroup>
+    </ScrollView>
+
+</LinearLayout>

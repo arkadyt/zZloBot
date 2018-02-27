@@ -1,0 +1,86 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="button_style">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/btn_adj_clr</item>
+    </style>
+
+    <style name="ButtonThemeStandard" parent="android:Widget.Holo.Button">
+        <item name="android:background">@drawable/themestandard_btn_default_holo_dark</item>
+    </style>
+
+    <style name="ImageButtonThemeStandard" parent="android:Widget.Holo.ImageButton">
+        <item name="android:background">@drawable/themestandard_btn_default_holo_dark</item>
+    </style>
+
+    <style name="SpinnerThemeStandard" parent="android:Widget.Holo.Spinner">
+        <item name="android:background">@drawable/themestandard_spinner_background_holo_dark</item>
+        <item name="android:dropDownSelector">@drawable/themestandard_list_selector_holo_dark</item>
+    </style>
+
+    <style name="TabThemeStandard">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:background">@drawable/themestandard_tab_indicator_holo</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="TabTextThemeStandard">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- v14 <item name="android:textAllCaps">true</item> -->
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">180dip</item>
+    </style>
+
+    <style name="ProgressBarThemeStandard" parent="android:Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/themestandard_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/themestandard_progress_indeterminate_horizontal_holo_dark</item>
+    </style>
+
+    <style name="SeekBarThemeStandard" parent="android:Widget.Holo.SeekBar">
+        <item name="android:progressDrawable">@drawable/themestandard_scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/themestandard_scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:thumb">@drawable/themestandard_scrubber_control_selector_holo_dark</item>
+    </style>
+
+    <style name="ToggleThemeStandard" parent="android:Widget.Holo.Button.Toggle">
+        <item name="android:background">@drawable/themestandard_btn_toggle_holo_dark</item>
+    </style>
+
+    <style name="ThemeStandard" parent="android:Theme.Holo">
+        <item name="android:windowBackground">@drawable/bg_opacity</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">0dp</item>
+    </style>
+
+    <style name="ThemeWorking" parent="android:Theme.Holo">
+        <item name="android:editTextBackground">@drawable/themestandard_edit_text_holo_dark</item>
+        <item name="android:textColorHighlight">#99ffffff</item>
+        <item name="android:textSelectHandleLeft">@drawable/themestandard_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/themestandard_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/themestandard_text_select_handle_middle</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/themestandard_btn_check_holo_dark</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/themestandard_btn_radio_holo_dark</item>
+        <item name="android:buttonStyle">@style/ButtonThemeStandard</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonThemeStandard</item>
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerThemeStandard</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarThemeStandard</item>
+        <item name="android:seekBarStyle">@style/SeekBarThemeStandard</item>
+        <item name="android:buttonStyleToggle">@style/ToggleThemeStandard</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/themestandard_list_selector_holo_dark</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/themestandard_activated_background_holo_dark</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/themestandard_fastscroll_thumb_holo</item>
+        <item name="android:windowBackground">@color/spit_color</item>
+    </style>
+
+</resources>

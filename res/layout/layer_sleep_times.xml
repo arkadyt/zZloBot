@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/digits_color"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/_step_text_view_freq_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ВНИМАНИЕ!"
+                android:textColor="@color/impact_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ВНИМАНИЕ!"
+                android:textColor="@color/digits_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Не изменяйте здесь ничего если вы не понимаете что делаете!"
+                android:textColor="@color/digits_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sleeping_times_txt_values_wherefrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="\nДанные значения применяются для всех создаваемых скриптов!\n"
+                android:textColor="@color/digits_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Установка значений ниже 1000 не рекомендуется (ниже 100 запрещается) ввиду повышенного риска автоперезагрузки устройства (в некоторых случаях - зависания намертво)!"
+                android:textColor="@color/digits_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="\n Частота анализа текущего состояния:"
+                android:textColor="@color/digits_color" />
+
+            <EditText
+                android:id="@+id/abmenu_freq_edit_ed_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="@string/sleep_time_normal_default" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Частота анализа текущего состояния в режиме ожидания начала турнира:"
+                android:textColor="@color/digits_color" />
+
+            <EditText
+                android:id="@+id/abmenu_freq_edit_ed_awaiting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="@string/sleep_time_tournament_default" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

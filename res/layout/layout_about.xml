@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/about_clip_tv_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="zZloBot v1.0.13\nКонфигуратор ботов для\nЭпической Мощи"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/impact_color" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher523" />
+
+    <TextView
+        android:id="@+id/about_clip_tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Автор: Аркадий Титенко (1998) \naka arcan770077f\n\nПо всем вопросам обращаться (сначала в справку, а только потом) сюда: arcan770077f@gmail.com"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/impact_color" />
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/digits_color"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/_step_text_view_reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Важно к прочтению!"
+                android:textColor="@color/impact_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_color"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/warning_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ВНИМАНИЕ!!!"
+                    android:textColor="@color/impact_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/warning_tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Создаваемые боты предназначены только для экранов с разрешением 1280x720!!! Для функционирования программы HiroMacro нужной для запуска ботов необходимы права root пользователя!!!"
+                    android:textColor="@color/impact_color"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/digits_color"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:id="@+id/ref_htv_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Справка по приложению."
+                    android:textColor="@color/digits_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Объяснять тут особо нечего. В процессе создания бота и так все подробно описано. Тем не менее нужно рассмотреть два вопроса которые могут у вас возникнуть:"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ref_htv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\nПервый вопрос: Принцип работы бота."
+                    android:textColor="@color/digits_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Объясню на примере: например вы выполняете квест &quot;Раскопки на Пепелище&quot;. Нам потребуется набить примерно 100 погорельцев чтобы выполнить квест. На Пепелище мы заходим в охоту, там запоминаем положение нужного моба (для Погорельца положение равно 2). Далее при создании бота на 6 шаге выбираем раздел &quot;Охота на мобов&quot;, там же указываем количество боев и позицию моба, которую можно узнать по соответствию нажав на кнопку &quot;Нумерация мобов&quot;. Все. Единственное что осталось сказать это то, что для данного случая запускать бота нужно именно стоя на Пепелище."
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ref_htv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\nВторой вопрос: как этих ботов запускать?"
+                    android:textColor="@color/digits_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Потребуется программа HiroMacro, и ее правильная настройка."
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ref_htv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\nНастройка программы HiroMacro."
+                    android:textColor="@color/digits_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="В программе нужно зайти в настройки, там в пункте &quot;Color Access Method&quot; выбрать &quot;FrameBuffer (RGB)&quot;. С настройкой все."
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ref_htv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\nЗапуск ботов."
+                    android:textColor="@color/digits_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ну и наконец - запуск ботов. Для начала в HiroMacro (на главном экране) нажмем на кнопку &quot;START&quot;. Далее нажимаем на &quot;Громкость вниз&quot;. Открывается список ботов созданных вами, где вы выбираете нужного вам. Как только вы нажмете на какой-либо пункт в списке, программа незамедлительно начнет выполнение бота, поэтому сначала нужно будет зайти в игру, затем в нужную локацию, и только потом запускать его.\n\nВроде все."
+                    android:textColor="@color/digits_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/digits_color"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_color"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ssu_header_with_file_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="my_lakerbot_100_stable.hmd"
+                android:textColor="@color/impact_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ssu_btn_botname"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ssu_tv_no_sense1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Имя бота"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ssu_bot_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="my_lakerbot_100_stable"
+                    android:textColor="@color/digits_color"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ssu_btn_superhits"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_adj_clr"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ssu_tv_no_sense2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Супер-удары"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ssu_super_hits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1212331323212321232312"
+                    android:textColor="@color/digits_color"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ssu_btn_shieldturns"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ssu_tv_no_sense3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Щит"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ssu_shield_turns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00101111111111111"
+                    android:textColor="@color/digits_color"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ssu_btn_potions"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ssu_tv_no_sense4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Зелья"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ssu_potion_turns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0012100001003004"
+                    android:textColor="@color/digits_color"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ssu_btn_dialogs"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ssu_tv_no_sense5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Диалоги"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ssu_dialogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Больший диалог - пропуск\nМеньший диалог - подтверждение"
+                    android:textColor="@color/digits_color"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ssu_btn_after_fight_action"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ssu_tv_no_sense6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Окончание боя"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ssu_after_fight_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ждать полного восстановления хп"
+                    android:textColor="@color/digits_color"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ssu_btn_bot_purpose"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ssu_tv_no_sense7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Цель бота"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ssu_bot_purpose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Моб - 6\nКоличество - 100"
+                    android:textColor="@color/digits_color"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#5ABEBEBE"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ssu_btn_must_win_only"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ssu_tv_no_sense8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Проверка победы"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/digits_color" />
+
+                <TextView
+                    android:id="@+id/ssu_must_win_only"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Нет"
+                    android:textColor="@color/digits_color"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

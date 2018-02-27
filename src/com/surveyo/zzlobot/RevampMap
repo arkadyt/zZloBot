@@ -1,0 +1,11 @@
+	ABmenu. mPd.
+	configureMacro.
+	getContext.
+
+	Threads in lieu of AssemblyTasks.
+	Toast messaging.
+	Clip Dialogs.
+	Install Fragments. FragmentTransaction can be animated.
+	Disable menu while configuring layers.
+	Use Bot class.
+	Comment sources properly.

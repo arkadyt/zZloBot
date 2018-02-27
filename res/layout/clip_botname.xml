@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spit_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:minHeight="64dip"
+            android:orientation="horizontal"
+            app:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dip"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/alert_title"
+                style="@android:style/TextAppearance.Holo.DialogWindowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Имя бота"
+                android:textColor="@color/digits_color" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/titleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/digits_color"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/clip_botname_ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/themestandard_edit_text_holo_dark_normal"
+        android:digits="0123456789abcdefghijklmnopqrst uvwxyz_-абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Имя бота"
+        android:inputType="text"
+        android:maxLength="50" />
+
+</LinearLayout>
